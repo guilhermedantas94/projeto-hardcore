@@ -1,0 +1,269 @@
+:root{
+    --primary: #B91F33;
+    --dark: #080A0D;
+    --light: #E0E0E0;
+    --medium: #555555;
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: var(--dark);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--light);
+
+}
+p{
+    color: #ffff;
+    font-size: 18px;
+    line-height: 100%;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.header{
+    padding: 14px;
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 100000;
+   
+
+}
+.header-fixed{
+    
+    position: fixed !important;
+    background-color:black; 
+    padding: 10px 0;
+    transition: 0.5s;
+
+}
+
+.header-fixed .logo img{
+    height: 70px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1116px;
+    margin:0 auto;
+    padding: 0 15px;
+    
+}
+
+.menu a{
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 88px;
+}
+
+.menu a:hover{
+    color: var(--primary);
+}
+
+.hero-section{
+    height: 100vh;
+    background-image: url(../img/Banner.jpg);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container{
+    position: relative;
+    top: 70px;
+}
+
+.hero-section h1{
+    font-size: 96px;
+    color: var(--light);
+    line-height: 80%;
+    margin: 0;
+    
+}
+
+.hero-section p{
+    font-size: 24px;
+    max-width: 736px;
+}
+
+.btn{
+    color: #ffff;
+    background-color: var(--primary);
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 28px;
+    padding: 13px 34px 10px 34px;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.content-presentation{
+
+    width: 546px;
+}
+.bg-light{
+    background-color: var(--light);
+}
+
+.bg-light h2{
+    color: var(--dark);
+}
+
+.bg-light p{
+    color: var(--medium);
+}
+
+
+.training{
+    padding: 50px 0;
+}
+
+.training .container{
+    position: relative;
+}
+.content-training{
+    max-width: 736px;
+}
+
+.image-traning{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+.footer{
+    background-color: var(--primary);
+    padding: 15px 0;
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+
+}
+
+.footer p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 736px;
+
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 8px;
+    margin-bottom: 70px;
+
+}
+
+@media (max-width: 1024px){
+    
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: var(--primary);
+        width: 100%;/* se o header tiver position*/
+        left: 0;
+        top: 100%;
+
+    }
+
+    .menu a{
+        display: block;
+        margin: 0;
+        padding: 30px 15px;
+        border-bottom: 1px solid var(--dark);
+
+    }
+
+    .bar{
+        width: 40px;
+        height: 3px;
+        background-color: #E0E0E0;
+        margin-bottom: 3px;
+    }
+
+    .menu a:hover{
+        text-decoration: underline;
+        color: var(--medium);
+
+    }
+    
+    .menu a:active{
+        color: var(--medium);
+    }
+    .menu-open{
+        display: block !important;
+    }
+
+    .hero-section{
+        height: 600px;
+    }
+
+    .hero-section h1{
+        font-size: 60px;
+    }
+
+    .hero-section p{
+        font-size: 20px;
+    }
+
+    .content-training{
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px){
+    
+    .presentation{
+        flex-direction: column;
+    }
+    .image-presentation{
+        width: 100%;
+    }
+    .image-traning{
+        display: none;
+    }
+
+    .content-training{
+        width: 100%;
+    }
+    
+    .content-presentation{
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+
+}
